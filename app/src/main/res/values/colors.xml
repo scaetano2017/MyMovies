@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MyMoviesRed">#c1272d</color>
+    <color name="MyMoviesRedDark">#a92327</color>
+    <color name="MyMoviesWhite">#ffffff</color>
+</resources>

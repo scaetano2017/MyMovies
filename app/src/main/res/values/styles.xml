@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- MyMovies App Theme -->
+    <style name="MyMovies" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/MyMoviesRed</item>
+        <item name="colorPrimaryDark">@color/MyMoviesRedDark</item>
+        <item name="colorAccent">@color/MyMoviesWhite</item>
+        <item name="fontFamily">@font/comfortaa</item>
+        <item name="android:textColor">@color/MyMoviesRed</item>
+    </style>
+
+    <!-- MyMovies Splash Page -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="colorPrimary">@color/MyMoviesRed</item>
+        <item name="colorPrimaryDark">@color/MyMoviesRedDark</item>
+        <item name="colorAccent">@color/MyMoviesWhite</item>
+        <item name="fontFamily">@font/comfortaa</item>
+        <item name="android:textColor">@color/MyMoviesRed</item>
+    </style>
+
+</resources>
