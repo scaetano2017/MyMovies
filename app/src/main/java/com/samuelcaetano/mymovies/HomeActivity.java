@@ -15,6 +15,8 @@ public class HomeActivity extends AppCompatActivity {
     Button signupbutton;
 
     Intent loginIntent;
+    Intent signupIntent;
+    Intent intentToOpen;
 
     Animation fadeOutAnimation;
     Animation fadeInAnimation;
@@ -30,9 +32,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         loginbutton=findViewById(R.id.login);
-        signupbutton=findViewById(R.id.signup);
+        signupbutton=findViewById(R.id.btnSignup);
 
         loginIntent = new Intent(HomeActivity.this, LoginActivity.class);
+        signupIntent = new Intent(HomeActivity.this, SignUpActivity.class);
 
         fadeOutAnimation = AnimationUtils.loadAnimation(HomeActivity.this, R.anim.fadeout);
         fadeInAnimation = AnimationUtils.loadAnimation(HomeActivity.this, R.anim.fadein);
@@ -57,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                startActivity(loginIntent);
+                startActivity(intentToOpen);
                 overridePendingTransition(0, android.R.anim.fade_out);
             }
 
@@ -71,6 +74,7 @@ public class HomeActivity extends AppCompatActivity {
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                intentToOpen = loginIntent;
                 loginbutton.startAnimation(fadeOutAnimation);
                 loginbutton.setEnabled(false);
                 signupbutton.startAnimation(fadeOffScreen);
@@ -81,8 +85,11 @@ public class HomeActivity extends AppCompatActivity {
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
+                intentToOpen = signupIntent;
+                signupbutton.startAnimation(fadeOutAnimation);
+                signupbutton.setEnabled(false);
+                loginbutton.startAnimation(fadeOffScreen);
+                loginbutton.setEnabled(false);            }
         });
     }
 

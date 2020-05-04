@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "291711549223",
+    "firebase_url": "https://mymovies-350af.firebaseio.com",
+    "project_id": "mymovies-350af",
+    "storage_bucket": "mymovies-350af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291711549223:android:ed53bf0b966f0810e8b302",
+        "android_client_info": {
+          "package_name": "com.samuelcaetano.mymovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291711549223-c80fn1aer8hnnljdcek22nr39k43b9im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2VrIDw68TtmGZGxo0adlniTh-FYp8GGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291711549223-c80fn1aer8hnnljdcek22nr39k43b9im.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
